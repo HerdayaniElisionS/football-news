@@ -5,6 +5,7 @@ from django.core import serializers
 from main.forms import NewsForm
 from main.models import News
 
+
 def show_main(request):
     news_list = News.objects.all()
     context = {
