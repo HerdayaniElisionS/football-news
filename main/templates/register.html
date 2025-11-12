@@ -116,3 +116,55 @@
   </div>
 </div>
 {% endblock content %}
+
+
+<h1>Main Title</h1>
+<h2>Subtitle</h2>
+<p>This is a <b>bold</b> word and this is <i>italic</i>.</p>
+<p>This is <u>underlined</u> and this is <mark>highlighted</mark>.</p>
+<p>This is <small>small text</small> and <strong>important text</strong>.</p>
+
+
+
+<a href="https://www.ui.ac.id">Visit UI Website</a>
+<br>
+<a href="/news/">Go to News Page</a>
+<br>
+<button type="button">Click Me</button>
+
+{% load static %}
+<img src="{% static 'main/logo.png' %}" alt="Football Logo">
+
+<h3>Ordered list:</h3>
+<ol>
+  <li>First</li>
+  <li>Second</li>
+  <li>Third</li>
+</ol>
+
+<h3>Unordered list:</h3>
+<ul>
+  <li>Apple</li>
+  <li>Banana</li>
+  <li>Cherry</li>
+</ul>
+
+<form method="POST" action="/submit/">
+  <label>Name:</label>
+  <input type="text" name="name" required><br>
+  
+  <label>Email:</label>
+  <input type="email" name="email"><br>
+  
+  <label>Password:</label>
+  <input type="password" name="password"><br>
+  
+  <label>Choose Category:</label>
+  <select name="category">
+    <option value="update">Update</option>
+    <option value="match">Match</option>
+  </select><br>
+
+  <button type="submit">Submit</button>
+</form>
+
